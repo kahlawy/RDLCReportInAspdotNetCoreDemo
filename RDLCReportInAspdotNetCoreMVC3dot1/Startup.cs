@@ -31,7 +31,7 @@ namespace RDLCReportInAspdotNetCoreMVC3dot1
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
             services.AddOptions();
-            services.AddTransient<IProductRepository,ProductRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
             services.AddControllersWithViews();
         }
 
